@@ -1,0 +1,288 @@
+/* 
+          _____                    _____                    _____          
+         /\    \                  /\    \                  /\    \         
+        /::\    \                /::\    \                /::\    \        
+       /::::\    \              /::::\    \              /::::\    \       
+      /::::::\    \            /::::::\    \            /::::::\    \      
+     /:::/\:::\    \          /:::/\:::\    \          /:::/\:::\    \     
+    /:::/  \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \    
+   /:::/    \:::\    \       \:::\   \:::\    \       \:::\   \:::\    \   
+  /:::/    / \:::\    \    ___\:::\   \:::\    \    ___\:::\   \:::\    \  
+ /:::/    /   \:::\    \  /\   \:::\   \:::\    \  /\   \:::\   \:::\    \ 
+/:::/____/     \:::\____\/::\   \:::\   \:::\____\/::\   \:::\   \:::\____\
+\:::\    \      \::/    /\:::\   \:::\   \::/    /\:::\   \:::\   \::/    /
+ \:::\    \      \/____/  \:::\   \:::\   \/____/  \:::\   \:::\   \/____/ 
+  \:::\    \               \:::\   \:::\    \       \:::\   \:::\    \     
+   \:::\    \               \:::\   \:::\____\       \:::\   \:::\____\    
+    \:::\    \               \:::\  /:::/    /        \:::\  /:::/    /    
+     \:::\    \               \:::\/:::/    /          \:::\/:::/    /     
+      \:::\    \               \::::::/    /            \::::::/    /      
+       \:::\____\               \::::/    /              \::::/    /       
+        \::/    /                \::/    /                \::/    /        
+         \/____/                  \/____/                  \/____/         
+                                                                           
+
+*/
+
+:root {
+    --color-white: #FFF;
+    --footer-color: #F2F2F2;
+    --footer-font-color: #5F6368;
+    --nav-font-color: #434343;
+    --space-1: 10px;
+    --space-2: 20px;
+    --space-3: 40px;
+    --font-family-serif: arial, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: inherit;
+    width: 100%;
+    min-width: 600px;
+    height: inherit;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+
+/* ------------------------------nav--------------------- */
+
+nav {
+    display: flex;
+    height: inherit;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav_elements {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav_elements li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px;
+    font-family: var(--font-family-serif);
+    color: #434343;
+    font: weight 24px;
+}
+
+.nav_elements li:hover {
+    text-decoration: underline;
+}
+
+#google_tools_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#user_icon {
+    width: 35px;
+    height: 35px;
+}
+
+#user_icon img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
+/* ---------------------------Buscador---------------------*/
+
+main {
+    margin: 10% 0 0 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.google_logo img {
+    max-width: 300px;
+}
+
+.google_input {
+    margin: 35px auto;
+    height: auto;
+}
+
+.google_input_container {
+    height: auto;
+}
+
+.google_input_container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    border-radius: 30px;
+    border: 1px solid #dfe1e5
+}
+
+.google_input_container form input {
+    border: none;
+    width: 450px;
+    height: 50px;
+    outline: none;
+}
+
+.google_input_container form:hover {
+    box-shadow: 2px 2px 1px 1px rgba(223, 225, 229, 0.8);
+}
+
+.search_icon {
+    background-image: url("https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+.mic_icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.google_search_buttons {
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+}
+
+.google_search_buttons_container {
+    display: flex;
+    align-items: center;
+}
+
+.google_search_buttons_container button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: solid 1px #f3f3f3;
+    font-size: 14px;
+    color: #5F6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+.google_search_buttons_container button:hover {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: solid 1px #C6C6C6;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 0 15px;
+    color: black;
+    box-shadow: 0 1px 1px 0#5F6368;
+}
+
+.google_offered {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google_offered_container {
+    margin: 30px auto;
+}
+
+.google_offered_container span {
+    font-family: var(--font-family-serif);
+    font-size: 13px;
+}
+
+.google_offered_container a {
+    color: #1A0DBE;
+}
+
+
+/* ------------------footer-------------- */
+
+footer {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-family: var(--font-family-serif);
+    font-size: 14px;
+    height: auto;
+}
+
+footer div {
+    border-top: solid 1px #E4E4E4;
+}
+
+.country_container {
+    background-color: #F2F2F2;
+    height: auto;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.conutry_container span {
+    margin-left: 30px;
+    color: #F2F2F2;
+    opacity: 0.5;
+}
+
+.bottom_footer {
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 10px 0 0;
+    opacity: 0.9;
+    border-top: solid 2px #E4E4E4;
+    padding-left: 30px;
+}
+
+.bottom_footer ul {
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.bottom_footer ul li {
+    text-decoration: none;
+}
+
+.bottom_footer ul li a {
+    text-decoration: none;
+    margin: 10px 10px 0 0;
+    color: black;
+}
+
+.bottom_footer ul li:hover {
+    text-decoration: underline;
+}
+
+.footer_left {
+    justify-content: left;
+}
+
+.footer_right {
+    justify-content: flex-end;
+}
